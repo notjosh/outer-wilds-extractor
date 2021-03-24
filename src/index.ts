@@ -150,12 +150,45 @@ type RedGreenBlue = {
 };
 
 type ThemeSource = {
-  _shipLogRumorColor: RGB;
-  _shipLogSelectionColor: RGB;
+  _menuBackgroundColorDisabled: RGB;
+  _menuBackgroundColorIntermediateSelect: RGB;
+  _menuBackgroundColorNormal: RGB;
+  _menuBackgroundColorPressed: RGB;
+  _menuBackgroundColorSelected: RGB;
+  _menuButtonBackgroundColorDisabled: RGB;
+  _menuButtonBackgroundColorIntermediateSelect: RGB;
+  _menuButtonBackgroundColorNormal: RGB;
+  _menuButtonBackgroundColorPressed: RGB;
+  _menuButtonBackgroundColorSelected: RGB;
+  _menuButtonForegroundColorDisabled: RGB;
+  _menuButtonForegroundColorIntermediateSelect: RGB;
+  _menuButtonForegroundColorNormal: RGB;
+  _menuButtonForegroundColorPressed: RGB;
+  _menuButtonForegroundColorSelected: RGB;
+  _menuForegroundColorDisabled: RGB;
+  _menuForegroundColorIntermediateSelect: RGB;
+  _menuForegroundColorNormal: RGB;
+  _menuForegroundColorPressed: RGB;
+  _menuForegroundColorSelected: RGB;
+  _menuSecondaryBackgroundColorDisabled: RGB;
+  _menuSecondaryBackgroundColorIntermediateSelect: RGB;
+  _menuSecondaryBackgroundColorNormal: RGB;
+  _menuSecondaryBackgroundColorPressed: RGB;
+  _menuSecondaryBackgroundColorSelected: RGB;
+  _menuSecondaryForegroundColorDisabled: RGB;
+  _menuSecondaryForegroundColorIntermediateSelect: RGB;
+  _menuSecondaryForegroundColorNormal: RGB;
+  _menuSecondaryForegroundColorPressed: RGB;
+  _menuSecondaryForegroundColorSelected: RGB;
   _neutralColor: RGB;
   _neutralHighlight: RGB;
+  _popupBlockerColor: RGB;
+  _primaryHighlightColor: RGB;
   _quantumMoonColor: RGB;
   _quantumMoonHighlight: RGB;
+  _secondaryHighlightColor: RGB;
+  _shipLogRumorColor: RGB;
+  _shipLogSelectionColor: RGB;
   _sunkenModuleColor: RGB;
   _sunkenModuleHighlight: RGB;
   _timeLoopColor: RGB;
@@ -165,12 +198,45 @@ type ThemeSource = {
 };
 
 type Theme = {
-  shipLogRumorColor: RedGreenBlue;
-  shipLogSelectionColor: RedGreenBlue;
+  menuBackgroundColorDisabled: RedGreenBlue;
+  menuBackgroundColorIntermediateSelect: RedGreenBlue;
+  menuBackgroundColorNormal: RedGreenBlue;
+  menuBackgroundColorPressed: RedGreenBlue;
+  menuBackgroundColorSelected: RedGreenBlue;
+  menuButtonBackgroundColorDisabled: RedGreenBlue;
+  menuButtonBackgroundColorIntermediateSelect: RedGreenBlue;
+  menuButtonBackgroundColorNormal: RedGreenBlue;
+  menuButtonBackgroundColorPressed: RedGreenBlue;
+  menuButtonBackgroundColorSelected: RedGreenBlue;
+  menuButtonForegroundColorDisabled: RedGreenBlue;
+  menuButtonForegroundColorIntermediateSelect: RedGreenBlue;
+  menuButtonForegroundColorNormal: RedGreenBlue;
+  menuButtonForegroundColorPressed: RedGreenBlue;
+  menuButtonForegroundColorSelected: RedGreenBlue;
+  menuForegroundColorDisabled: RedGreenBlue;
+  menuForegroundColorIntermediateSelect: RedGreenBlue;
+  menuForegroundColorNormal: RedGreenBlue;
+  menuForegroundColorPressed: RedGreenBlue;
+  menuForegroundColorSelected: RedGreenBlue;
+  menuSecondaryBackgroundColorDisabled: RedGreenBlue;
+  menuSecondaryBackgroundColorIntermediateSelect: RedGreenBlue;
+  menuSecondaryBackgroundColorNormal: RedGreenBlue;
+  menuSecondaryBackgroundColorPressed: RedGreenBlue;
+  menuSecondaryBackgroundColorSelected: RedGreenBlue;
+  menuSecondaryForegroundColorDisabled: RedGreenBlue;
+  menuSecondaryForegroundColorIntermediateSelect: RedGreenBlue;
+  menuSecondaryForegroundColorNormal: RedGreenBlue;
+  menuSecondaryForegroundColorPressed: RedGreenBlue;
+  menuSecondaryForegroundColorSelected: RedGreenBlue;
   neutralColor: RedGreenBlue;
   neutralHighlight: RedGreenBlue;
+  popupBlockerColor: RedGreenBlue;
+  primaryHighlightColor: RedGreenBlue;
   quantumMoonColor: RedGreenBlue;
   quantumMoonHighlight: RedGreenBlue;
+  secondaryHighlightColor: RedGreenBlue;
+  shipLogRumorColor: RedGreenBlue;
+  shipLogSelectionColor: RedGreenBlue;
   sunkenModuleColor: RedGreenBlue;
   sunkenModuleHighlight: RedGreenBlue;
   timeLoopColor: RedGreenBlue;
@@ -438,12 +504,107 @@ class OuterWildsExtractor extends Command {
     };
 
     const theme: Theme = {
-      shipLogRumorColor: rgbify(styleManagerSource._shipLogRumorColor),
-      shipLogSelectionColor: rgbify(styleManagerSource._shipLogSelectionColor),
+      menuBackgroundColorDisabled: rgbify(
+        styleManagerSource._menuBackgroundColorDisabled
+      ),
+      menuBackgroundColorIntermediateSelect: rgbify(
+        styleManagerSource._menuBackgroundColorIntermediateSelect
+      ),
+      menuBackgroundColorNormal: rgbify(
+        styleManagerSource._menuBackgroundColorNormal
+      ),
+      menuBackgroundColorPressed: rgbify(
+        styleManagerSource._menuBackgroundColorPressed
+      ),
+      menuBackgroundColorSelected: rgbify(
+        styleManagerSource._menuBackgroundColorSelected
+      ),
+      menuButtonBackgroundColorDisabled: rgbify(
+        styleManagerSource._menuButtonBackgroundColorDisabled
+      ),
+      menuButtonBackgroundColorIntermediateSelect: rgbify(
+        styleManagerSource._menuButtonBackgroundColorIntermediateSelect
+      ),
+      menuButtonBackgroundColorNormal: rgbify(
+        styleManagerSource._menuButtonBackgroundColorNormal
+      ),
+      menuButtonBackgroundColorPressed: rgbify(
+        styleManagerSource._menuButtonBackgroundColorPressed
+      ),
+      menuButtonBackgroundColorSelected: rgbify(
+        styleManagerSource._menuButtonBackgroundColorSelected
+      ),
+      menuButtonForegroundColorDisabled: rgbify(
+        styleManagerSource._menuButtonForegroundColorDisabled
+      ),
+      menuButtonForegroundColorIntermediateSelect: rgbify(
+        styleManagerSource._menuButtonForegroundColorIntermediateSelect
+      ),
+      menuButtonForegroundColorNormal: rgbify(
+        styleManagerSource._menuButtonForegroundColorNormal
+      ),
+      menuButtonForegroundColorPressed: rgbify(
+        styleManagerSource._menuButtonForegroundColorPressed
+      ),
+      menuButtonForegroundColorSelected: rgbify(
+        styleManagerSource._menuButtonForegroundColorSelected
+      ),
+      menuForegroundColorDisabled: rgbify(
+        styleManagerSource._menuForegroundColorDisabled
+      ),
+      menuForegroundColorIntermediateSelect: rgbify(
+        styleManagerSource._menuForegroundColorIntermediateSelect
+      ),
+      menuForegroundColorNormal: rgbify(
+        styleManagerSource._menuForegroundColorNormal
+      ),
+      menuForegroundColorPressed: rgbify(
+        styleManagerSource._menuForegroundColorPressed
+      ),
+      menuForegroundColorSelected: rgbify(
+        styleManagerSource._menuForegroundColorSelected
+      ),
+      menuSecondaryBackgroundColorDisabled: rgbify(
+        styleManagerSource._menuSecondaryBackgroundColorDisabled
+      ),
+      menuSecondaryBackgroundColorIntermediateSelect: rgbify(
+        styleManagerSource._menuSecondaryBackgroundColorIntermediateSelect
+      ),
+      menuSecondaryBackgroundColorNormal: rgbify(
+        styleManagerSource._menuSecondaryBackgroundColorNormal
+      ),
+      menuSecondaryBackgroundColorPressed: rgbify(
+        styleManagerSource._menuSecondaryBackgroundColorPressed
+      ),
+      menuSecondaryBackgroundColorSelected: rgbify(
+        styleManagerSource._menuSecondaryBackgroundColorSelected
+      ),
+      menuSecondaryForegroundColorDisabled: rgbify(
+        styleManagerSource._menuSecondaryForegroundColorDisabled
+      ),
+      menuSecondaryForegroundColorIntermediateSelect: rgbify(
+        styleManagerSource._menuSecondaryForegroundColorIntermediateSelect
+      ),
+      menuSecondaryForegroundColorNormal: rgbify(
+        styleManagerSource._menuSecondaryForegroundColorNormal
+      ),
+      menuSecondaryForegroundColorPressed: rgbify(
+        styleManagerSource._menuSecondaryForegroundColorPressed
+      ),
+      menuSecondaryForegroundColorSelected: rgbify(
+        styleManagerSource._menuSecondaryForegroundColorSelected
+      ),
       neutralColor: rgbify(styleManagerSource._neutralColor),
       neutralHighlight: rgbify(styleManagerSource._neutralHighlight),
+      popupBlockerColor: rgbify(styleManagerSource._popupBlockerColor),
+      primaryHighlightColor: rgbify(styleManagerSource._primaryHighlightColor),
       quantumMoonColor: rgbify(styleManagerSource._quantumMoonColor),
       quantumMoonHighlight: rgbify(styleManagerSource._quantumMoonHighlight),
+      secondaryHighlightColor: rgbify(
+        styleManagerSource._secondaryHighlightColor
+      ),
+      shipLogRumorColor: rgbify(styleManagerSource._shipLogRumorColor),
+      shipLogSelectionColor: rgbify(styleManagerSource._shipLogSelectionColor),
       sunkenModuleColor: rgbify(styleManagerSource._sunkenModuleColor),
       sunkenModuleHighlight: rgbify(styleManagerSource._sunkenModuleHighlight),
       timeLoopColor: rgbify(styleManagerSource._timeLoopColor),

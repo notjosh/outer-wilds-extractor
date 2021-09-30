@@ -9,7 +9,7 @@ const fs = fss.promises;
 
 // magic number!
 const shipLogManagerPathID = 30373;
-const uiStyleManagerPathId = 8059;
+const uiStyleManagerPathID = 8059;
 
 type AssetXml = {
   Name: string;
@@ -488,7 +488,7 @@ class OuterWildsExtractor extends Command {
     }
 
     const styleManagerSource = await jsonForPathID<ThemeSource>(
-      uiStyleManagerPathId
+      uiStyleManagerPathID
     );
 
     // assume input 0-1, output 0-255

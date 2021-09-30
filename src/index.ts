@@ -8,8 +8,8 @@ import notEmpty from './notEmpty';
 const fs = fss.promises;
 
 // magic number!
-const shipLogManagerPathID = 25268;
-const uiStyleManagerPathId = 7158;
+const shipLogManagerPathID = 30373;
+const uiStyleManagerPathId = 8059;
 
 type AssetXml = {
   Name: string;

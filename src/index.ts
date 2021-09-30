@@ -9,7 +9,7 @@ const fs = fss.promises;
 
 // magic number!
 const shipLogManagerPathID = 25268;
-const uiStyleManagePathId = 7158;
+const uiStyleManagerPathId = 7158;
 
 type AssetXml = {
   Name: string;
@@ -74,7 +74,7 @@ type Library = {
   }[];
 };
 
-type AstroObjectRumosFactXml = {
+type AstroObjectRumorsFactXml = {
   ID: string;
   SourceID: string;
   Text: string;
@@ -92,7 +92,7 @@ type AstroObjectEntryXml = {
   IsCuriosity?: boolean;
   AltPhotoCondition?: string;
 
-  RumorFact: AstroObjectRumosFactXml[] | AstroObjectRumosFactXml;
+  RumorFact: AstroObjectRumorsFactXml[] | AstroObjectRumorsFactXml;
   ExploreFact: AstroObjectExploreFactXml[] | AstroObjectExploreFactXml;
   Entry?: AstroObjectEntryXml[] | AstroObjectEntryXml;
 };
@@ -484,7 +484,7 @@ class OuterWildsExtractor extends Command {
     }
 
     const styleManagerSource = await jsonForPathID<ThemeSource>(
-      uiStyleManagePathId
+      uiStyleManagerPathId
     );
 
     // assume input 0-1, output 0-255

@@ -34,3 +34,7 @@ total 288
 drwxr-xr-x  66 joshua  staff   2.1K 22 Mar 15:21 sprites
 -rw-r--r--   1 joshua  staff   1.2K 22 Mar 15:25 theme.json
 ```
+
+## Problems
+
+For some reason (and it's probably because I don't know Unity) there are multiple of similar files (i.e. `UIStyleManager.json`, `UIStyleManager #12345.json`, etc), where the latter files are usually more recent. You may need to manually fiddle with it to find the right one.

@@ -150,6 +150,8 @@ type RedGreenBlue = {
 };
 
 type ThemeSource = {
+  _invisiblePlanetColor: RGB;
+  _invisiblePlanetHighlight: RGB;
   _menuBackgroundColorDisabled: RGB;
   _menuBackgroundColorIntermediateSelect: RGB;
   _menuBackgroundColorNormal: RGB;
@@ -198,6 +200,8 @@ type ThemeSource = {
 };
 
 type Theme = {
+  invisiblePlanetColor: RedGreenBlue;
+  invisiblePlanetHighlight: RedGreenBlue;
   menuBackgroundColorDisabled: RedGreenBlue;
   menuBackgroundColorIntermediateSelect: RedGreenBlue;
   menuBackgroundColorNormal: RedGreenBlue;
@@ -504,6 +508,10 @@ class OuterWildsExtractor extends Command {
     };
 
     const theme: Theme = {
+      invisiblePlanetColor: rgbify(styleManagerSource._invisiblePlanetColor),
+      invisiblePlanetHighlight: rgbify(
+        styleManagerSource._invisiblePlanetHighlight
+      ),
       menuBackgroundColorDisabled: rgbify(
         styleManagerSource._menuBackgroundColorDisabled
       ),

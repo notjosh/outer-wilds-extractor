@@ -11,10 +11,10 @@ Extracts the facts/rumours from Outer Wilds game files, and transforms into JSON
 
 ## Requirements
 
-- export `Sprites` from AssetStudio
-- export `MonoBehaviour` from AssetStudio
-- export `TextAssets` from AssetStudio
-- export `assets.xml` from AssetStudio
+- export all `Sprite`s from AssetStudio
+- export all `MonoBehaviour`s from AssetStudio
+- export all `TextAsset`s from AssetStudio
+- export `assets.xml` of all files from AssetStudio
 
 ## Running
 

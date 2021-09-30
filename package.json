@@ -9,26 +9,26 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@oclif/plugin-help": "^3",
-    "tslib": "^1",
+    "@oclif/plugin-help": "^3.2.3",
+    "tslib": "^2.3.1",
     "xml2json": "^0.12.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
-    "@types/node": "^10",
-    "@types/xml2json": "^0.11.3",
-    "eslint": "^7.2.0",
+    "@types/node": "^16.10.2",
+    "@types/xml2json": "^0.11.4",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb": "18.2.1",
-    "eslint-config-oclif": "^3.1",
-    "eslint-config-oclif-typescript": "^0.1",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-config-oclif": "^4.0.0",
+    "eslint-config-oclif-typescript": "^1.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^2.2.1",
-    "ts-node": "^8",
-    "typescript": "^3.3"
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
   },
   "engines": {
     "node": ">=10.1.0"

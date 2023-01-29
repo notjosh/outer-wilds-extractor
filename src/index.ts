@@ -8,8 +8,8 @@ import notEmpty from './notEmpty';
 const fs = fss.promises;
 
 // magic number!
-const shipLogManagerPathID = 30373;
-const uiStyleManagerPathID = 8059;
+const shipLogManagerPathID = 30698; // note, previous versions used: 30373
+const uiStyleManagerPathID = 8271; // note, previous versions used: 8059
 
 type AssetXml = {
   Name: string;
@@ -407,7 +407,7 @@ class OuterWildsExtractor extends Command {
         xml2jsonOptions
       );
 
-      return (json as any) as T;
+      return json as any as T;
     };
 
     const managerSource = await jsonForPathID<ManagerSource>(
